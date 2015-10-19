@@ -394,7 +394,7 @@ Casper.prototype.clear = function clear() {
 Casper.prototype.click = function click(selector) {
     "use strict";
     this.checkStarted();
-    this.emit('click', ''), args);
+    this.emit('click', args);
     var success = this.mouseEvent('click', selector);
     this.evaluate(function(selector) {
         document.querySelector(selector).focus();
